@@ -1,6 +1,24 @@
-print ("hello world")
-print ("learning python")
-print ("changes made directly on github")
-print ("changes made locally")
-print ("made another change locally")
-print ("and more changes")
+#------------------------
+# 2018-02-9
+# Find character in string
+def findChar (str, ch):
+    index = 0
+    while (index < len(str)):
+        if str[index] == ch:
+            print ("found character {} in {} at location {}".format (ch, str, index))    
+            return index
+        index = index + 1
+    
+    print ("Did not find character {} in {}".format(ch, str))
+    return -1
+    
+print ("Enter string to search in:")
+stringToSearch = input()
+print ("Enter character to search in {}".format(stringToSearch))
+characterToSearch = input()
+foundChar = findChar(stringToSearch, characterToSearch)
+#-----------------------------------------------------
+
+
+
+
