@@ -5,9 +5,9 @@ def findChar (str, ch):
     index = 0
     while (index < len(str)):
         if str[index] == ch:
-            print ("found character {} in {} at location {}".format (ch, str, index))    
-            print ("found character", ch, "at location", index, "'n string", str)    
-            return index
+            #print ("found character {} in {} at location {}".format (ch, str, index))    
+            print ("found character", ch, "at location", index, "in string", str)    
+            # return index
         index = index + 1
     
     print ("Did not find character {} in {}".format(ch, str))
@@ -17,7 +17,7 @@ print ("Enter string to search in:")
 stringToSearch = input()
 print ("Enter character to search in {}".format(stringToSearch))
 characterToSearch = input()
-foundChar = findChar(stringToSearch, characterToSearch)
+findChar(stringToSearch, characterToSearch)
 #-----------------------------------------------------
 
 
