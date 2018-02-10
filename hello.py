@@ -6,6 +6,7 @@ def findChar (str, ch):
     while (index < len(str)):
         if str[index] == ch:
             print ("found character {} in {} at location {}".format (ch, str, index))    
+            print ("found character", ch, "at location", index, "'n string", str)    
             return index
         index = index + 1
     
